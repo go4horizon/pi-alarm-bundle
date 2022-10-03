@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+B_PIN = os.getenv('B_PIN', 13)
 DEFAULT_SOUND_PATH = os.getenv('DEFAULT_SOUND_PATH', './resources')
 API_PATH = os.getenv('API_PATH', 'https://ociokexap5.execute-api.eu-central-1.amazonaws.com/v1/status/device')
 
